@@ -1,0 +1,26 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<!--<marquee scrollamount="2" onmouseover="this.scrollAmount=0" onmouseout="this.scrollAmount=2" behavior="alternate"><b> offer</b></marquee>  -->
+<h1> Products Available</h1>
+<% cache ['store', Product.latest] do %>
+<% @products.each do |product| %>
+<% cache ['entry', product] do %>
+<!-- css relating to this file is stored in
+	assessts/store.css.scss-->
+<div class="entry">
+<%= image_tag(product.image_url) %>
+<h3><%= product.title %></h3>
+<%= sanitize(product.description) %>
+<h4><B>Available At: <%= product.shop %></b></h4>
+<div class="price_line">
+<span class="price"><%= sprintf("Rs %0.02f", product.price) %></span>
+
+<%= button_to 'Add to Cart', line_items_path(product_id: product), remote: true %>
+
+</div>
+</div>
+<% end %>
+<% end %>
+<% end %>

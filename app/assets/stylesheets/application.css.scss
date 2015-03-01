@@ -1,0 +1,201 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+.depot_form 
+{
+	fieldset 
+	{
+		background: #efe;
+		legend 
+		{
+			color: #dfd;
+			background: #BF0000;
+			font-family: sans-serif;
+			padding: 0.2em 1em;
+		}
+	}
+	form 
+	{
+		label 
+		{
+			width: 5em;
+			float: left;
+			text-align: right;
+			padding-top: 0.2em;
+			margin-right: 0.1em;
+			display: block;
+		}
+		select, textarea, input 
+		{
+			margin-left: 0.5em;
+		}
+		.submit 
+		{
+			margin-left: 4em;
+		}
+		br 
+		{
+			display: none
+		}
+	}
+}
+
+
+
+#bannerimg img
+{
+	float: left;
+	position:fixed;
+	height:27%;
+	width:100%;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+#sidelogo img 
+{
+	/* position:fixed; */
+	position:fixed;
+	bottom:1%;
+	right:0%;
+	z-index:1;
+	height:9%;
+	width:3%;
+		
+}
+
+#notice 
+{
+	color: #141 !important; /* this will override any other inherited color effect */
+	border: 2px solid red;
+	padding: 1em;
+	margin-bottom: 2em;
+	background-color: #f0f0f0;
+	font: bold smaller sans-serif;
+}
+
+#columns 
+{
+	position:absolute;
+	left:0%;
+	background:#BF0000;
+	
+	/*	position:absolute;
+	top:14em;
+	left:0em;
+	height:100%; */
+
+#main 
+{
+	margin-left: 22em;
+	padding: 2em 2em 2em 2em;
+	background: white;
+	box-shadow: 10px 10px 5px #888888;
+
+}
+
+#side 
+{
+	position:absolute;
+	float: left;
+	padding: 2em;
+	width: 18em;
+	background: #BF0000;
+	
+	
+	
+	sh /*  new tag for heading in side column */
+	{
+		color:#000;
+		font-size:18px;
+		font-weight:bolder;
+	}
+	
+	form, div 
+	{
+		display: inline;
+	}
+
+	input 
+	{
+		font-size: small;
+	}
+	#cart 
+	{
+		font-size: smaller;
+		color: white;
+		width: 22em;
+		table 
+		{
+			border-top: 1px dotted #595;
+			border-bottom: 1px dotted #595;
+			margin-bottom: 10px;
+		}
+	}
+	ul 
+	{
+		padding: 0;
+		li 
+		{
+			list-style: none;
+			padding: 1em 2em 2em 0em;
+									
+			a 
+			{
+				padding: 1em 6em 1em 6em;
+				border: 3px solid;
+				border-radius: 25px;
+				text-decoration:none; 
+				color: #bfb;
+				font-size: small;
+			}
+			a:hover
+			{
+				background:#000;
+			}
+		
+			
+		}
+	}
+}
+}
+#contact
+{
+	a
+	{	padding-left:50px;
+		text-decoration:none;
+		font-size:24px;
+			
+	}
+	a:hover
+	{
+		background:blue;
+	}
+	img
+	{
+		
+		height:3em;
+		width:3em;
+		padding-left:5em;
+		padding-right:20em;
+			
+	}
+		
+	p
+	{	
+		font-size:22px;
+		padding-left:65px;
+	}
+	
+}
